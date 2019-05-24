@@ -1,0 +1,41 @@
+/* pagina 2 sw ccs en ella se ecuentras los likes u dislikes como su respisive */
+.caja {
+  box-sizing:border-box;
+}
+
+.main {
+  padding:20px;
+  float:left;
+  width:60%; 
+}
+
+.right {
+  padding:20px;
+  float:left;
+  width:40%; 
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; 
+  }
+}
+
+.contenedor{width:200px;margin-right:auto;margin-left:auto;font-family:Georgia;font-size:13px;line-height:135%}
+h3{color: #979797;border-bottom: 1px dotted #DDD;font-size:21px;padding:0 0 10px 0;clear:both;}
+
+/*voting style */
+.votos {float:right;width: 185.2px;padding-bottom: 5px;padding-top: 5px;}
+
+.votos .dw_button {background: url(../img/votos.png) -64px 0 no-repeat;float: left;height: 42px;width: 64px;cursor:pointer;margin:0 0 0 10px}
+.votos .dw_button:hover {background: url(../img/votos.png) no-repeat -64px -42px;}
+
+.votos .up_button {background: url(../img/votos.png) 0 0 no-repeat;float: left;height: 42px;width: 64px;cursor:pointer;}
+.votos .up_button:hover{background: url(../img/votos.png) no-repeat 0 -42px;}
+
+.voting_btn{float:left;}
+.voting_btn span{font-size: 11px;font-family:Arial,sans-serif;margin:10px 0 0 37px;display:block;width:27px;height:22px;line-height:22px;text-align:center}
+
+.likes_votado{background: url(../img/votos.png) no-repeat 0 -42px !important;}
+.hates_votado{background: url(../img/votos.png) no-repeat -64px -42px !important;}
